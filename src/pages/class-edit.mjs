@@ -29,6 +29,12 @@ export class ClassEditPage extends HTMLElement {
           background-color: transparent;
           font-size: 24px;
           text-align: center;
+          transition:0.3s;
+
+          &:hover{
+            background-color:#9a9a9a;
+            text:"test";
+          }
         }
 
         & > span {
@@ -60,9 +66,9 @@ export class ClassEditPage extends HTMLElement {
     <style>${this.css()}</style>
     <div class="class-edit">
     <div class="header">
-      <button class="move-list">⬅️</button>
+      <button class="move-list" title="科目一覧に戻る">⬅️</button>
       <span>class edit page</span>
-      <button class="save">💾</button>
+      <button class="save" title="保存">💾</button>
     </div>
     <div class="input-container">
       <span>科目名</span>
